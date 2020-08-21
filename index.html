@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Teams</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<title>dd</title>
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<script href="header.js"></script>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" type="text/css" href="11.css">
 </head>
 <body>
-<section>
-	<div class="container">
-		<h1 class="heading">Meet The Team</h1>
-		<div class="card-wrapper">
-			<div class="card">
-				<img src="images/card-bg.jpg" alt="card background" class="card-img">
-				<img src="images/Rugved.jpg" alt="profile image" class="profile-img">
-				<h1>NAME1</h1>
-				<p class="title">Profd</p>
-				<p class="about">fgdfdf</p>
-				<a href="#" class="btn">contwe</a>
-				<ul class="social-media">
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
-			</div>
-			<div class="card">
-				<img src="images/card-bg.jpg" alt="card background" class="card-img">
-				<img src="images/Rugved.jpg" alt="profile image" class="profile-img">
-				<h1>NAME1</h1>
-				<p class="title">Profd</p>
-				<p class="about">fgdfdf</p>
-				<a href="#" class="btn">contwe</a>
-				<ul class="social-media">
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
-			</div>
-			<div class="card">
-				<img src="images/card-bg.jpg" alt="card background" class="card-img">
-				<img src="images/Rugved.jpg" alt="profile image" class="profile-img">
-				<h1>NAME1</h1>
-				<p class="title">Profd</p>
-				<p class="about">fgdfdf</p>
-				<a href="#" class="btn">contwe</a>
-				<ul class="social-media">
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
-			</div>
-			<div class="card">
-				<img src="images/card-bg.jpg" alt="card background" class="card-img">
-				<img src="images/Rugved.jpg" alt="profile image" class="profile-img">
-				<h1>NAME1</h1>
-				<p class="title">Profd</p>
-				<p class="about">fgdfdf</p>
-				<a href="#" class="btn">contwe</a>
-				<ul class="social-media">
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
+<!-- Header Start -->
+  <div class="svg-container">
+    <svg viewbox="0 0 800 400" class="svg">
+      <path id="curve" fill="#0047AB" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+      </path>
+    </svg>
+  </div>
+
+  <header>
+    <h1>Our Team</h1>
+  </header>
+
+<!-- Header End -->
+
+<!-- Swiper Start-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+	      	<div class="wrapper">
+			  <div class="card"><img src="./images/Rugved.jpg"/>
+				   <div class="info">
+				      <h1>Mountain</h1>
+				      <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+				      <button>Read More</button>
+			  		</div>
+			  	</div>
+	    	</div>
+	    </div>
+	    <div class="swiper-slide">
+	      	<div class="wrapper">
+			  <div class="card"><img src="./images/Rugved.jpg"/>
+				   <div class="info">
+				      <h1>Mountain</h1>
+				      <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+				      <button>Read More</button>
+			  		</div>
+			  	</div>
+	    	</div>
+	    </div>
+  	</div>
+  </div>
+</div>
+<!-- Swiper End -->
+
+ <!-- Initialize Swiper -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        loop: true,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: 
+        {
+        delay: 2500,
+        disableOnInteraction: true,
+      	},
+      loop: true,
+    });
+  </script>
 </body>
 </html>
